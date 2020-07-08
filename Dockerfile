@@ -15,6 +15,9 @@ RUN apt-get update --fix-missing && apt-get install -y python3 \
 
 RUN apt-get update --fix-missing
 
+# Used for database connector
+# RUN apt-get --yes install postgresql-client
+
 COPY . /app
 RUN chmod +x startapp.sh 
 
